@@ -32,28 +32,29 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <MuiThemeProvider theme={theme}>
-      <Router>
-        <div>
-          <Switch>
-            <Route exact path="/">
-              <Redirect to="/dodo-list" />
-            </Route>
-            <Route exact path="/login" component={login} />
-            <Route exact path="/signup" component={signup} />
-            <Route exact path="/dodo-list" component={home} />
-          </Switch>
-        </div>
-      </Router>
-      {/* <HashRouter basename="/">
-        <div>
-          
-          <Route exact path="/" component={home} />
-          <Route path="/login" component={login} />
-          <Route path="/signup" component={signup} />
-        </div>
-      </HashRouter> */}
-    </MuiThemeProvider>
+    // <MuiThemeProvider theme={theme}>
+    //   <Router>
+    //     <div>
+    //       <Switch>
+    //         <Route exact path="/">
+    //           <Redirect to="/dodo-list" />
+    //         </Route>
+    //         <Route exact path="/login" component={login} />
+    //         <Route exact path="/signup" component={signup} />
+    //         <Route exact path="/dodo-list" component={home} />
+    //       </Switch>
+    //     </div>
+    //   </Router>
+    //   {/* <HashRouter basename="/">
+    //     <div>
+
+    //       <Route exact path="/" component={home} />
+    //       <Route path="/login" component={login} />
+    //       <Route path="/signup" component={signup} />
+    //     </div>
+    //   </HashRouter> */}
+    // </MuiThemeProvider>
+    <div>this is dodo list</div>
   );
 }
 export default App;
