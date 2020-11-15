@@ -1,10 +1,10 @@
 import React from "react";
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Switch,
-//   Redirect,
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 // import {
 //   BrowserRouter as Router,
 //   Route,
@@ -12,9 +12,9 @@ import React from "react";
 //   Switch,
 // } from "react-router-dom";
 // import { HashRouter, Route, Link, Redirect } from "react-router-dom";
-// import login from "./pages/login";
-// import signup from "./pages/signup";
-// import home from "./pages/home";
+import login from "./pages/login";
+import signup from "./pages/signup";
+import home from "./pages/home";
 
 // import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
 // import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
@@ -33,18 +33,18 @@ import React from "react";
 function App() {
   return (
     // <MuiThemeProvider theme={theme}>
-    //   <Router>
-    //     <div>
-    //       <Switch>
-    //         <Route exact path="/">
-    //           <Redirect to="/dodo-list" />
-    //         </Route>
-    //         <Route exact path="/login" component={login} />
-    //         <Route exact path="/signup" component={signup} />
-    //         <Route exact path="/dodo-list" component={home} />
-    //       </Switch>
-    //     </div>
-    //   </Router>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <Redirect to="/dodo-list" />
+          </Route>
+          <Route exact path="/login" component={login} />
+          <Route exact path="/signup" component={signup} />
+          <Route exact path="/dodo-list" component={home} />
+        </Switch>
+      </div>
+    </Router>
     //   {/* <HashRouter basename="/">
     //     <div>
 
@@ -54,7 +54,7 @@ function App() {
     //     </div>
     //   </HashRouter> */}
     // </MuiThemeProvider>
-    <div>this is dodo list</div>
+    // <div>this is dodo list</div>
   );
 }
 export default App;
