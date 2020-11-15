@@ -5,30 +5,30 @@ import React from "react";
 //   Switch,
 //   Redirect,
 // } from "react-router-dom";
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Redirect,
+//   Switch,
+// } from "react-router-dom";
 // import { HashRouter, Route, Link, Redirect } from "react-router-dom";
-import login from "./pages/login";
-import signup from "./pages/signup";
-import home from "./pages/home";
+// import login from "./pages/login";
+// import signup from "./pages/signup";
+// import home from "./pages/home";
 
-import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+// import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
+// import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      light: "#33c9dc",
-      main: "#FF5722",
-      dark: "#d50000",
-      contrastText: "#fff",
-    },
-  },
-});
+// const theme = createMuiTheme({
+//   palette: {
+//     primary: {
+//       light: "#33c9dc",
+//       main: "#FF5722",
+//       dark: "#d50000",
+//       contrastText: "#fff",
+//     },
+//   },
+// });
 
 function App() {
   return (
