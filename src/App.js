@@ -5,7 +5,8 @@ import React from "react";
 //   Switch,
 //   Redirect,
 // } from "react-router-dom";
-import { HashRouter, Route, Link, Redirect } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
+// import { HashRouter, Route, Link, Redirect } from "react-router-dom";
 import login from "./pages/login";
 import signup from "./pages/signup";
 import home from "./pages/home";
