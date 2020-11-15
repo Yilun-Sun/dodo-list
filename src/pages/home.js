@@ -17,7 +17,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import withStyles from "@material-ui/core/styles/withStyles";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import NotesIcon from "@material-ui/icons/Notes";
-import Avatar from "@material-ui/core/avatar";
+// import Avatar from "@material-ui/core/avatar";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
@@ -149,7 +149,7 @@ class home extends Component {
           >
             <div className={classes.toolbar} />
             <Divider />
-            <center>
+            {/* <center>
               <Avatar
                 src={this.state.profilePicture}
                 className={classes.avatar}
@@ -158,7 +158,7 @@ class home extends Component {
                 {" "}
                 {this.state.firstName} {this.state.lastName}
               </p>
-            </center>
+            </center> */}
             <Divider />
             <List>
               <ListItem button key="Todo" onClick={this.loadTodoPage}>
