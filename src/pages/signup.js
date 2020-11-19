@@ -81,6 +81,8 @@ class signup extends Component {
       password: this.state.password,
       confirmPassword: this.state.confirmPassword,
     };
+    // const baseURL =
+    //   "https://us-central1-dodo-list-yilun.cloudfunctions.net/api";
     axios
       .post("/signup", newUserData)
       .then((response) => {
