@@ -21,6 +21,7 @@ import MuiDialogTitle from "@material-ui/core/DialogTitle";
 import MuiDialogContent from "@material-ui/core/DialogContent";
 
 import axios from "axios";
+import baseUrl from "../util/baseUrl";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import { authMiddleWare } from "../util/auth";
@@ -124,7 +125,7 @@ class todo extends Component {
     const authToken = localStorage.getItem("AuthToken");
     axios.defaults.headers.common = { Authorization: `${authToken}` };
     axios
-      .get("/todos")
+      .get(`${baseUrl}/todos`)
       .then((response) => {
         this.setState({
           todos: response.data,
@@ -142,7 +143,7 @@ class todo extends Component {
     axios.defaults.headers.common = { Authorization: `${authToken}` };
     let todoId = data.todo.todoId;
     axios
-      .delete(`todo/${todoId}`)
+      .delete(`${baseUrl}/todo/${todoId}`)
       .then(() => {
         window.location.reload();
       })
@@ -224,7 +225,7 @@ class todo extends Component {
         };
       } else {
         options = {
-          url: "/todo",
+          url: `${baseUrl}/todo`,
           method: "post",
           data: userTodo,
         };

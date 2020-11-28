@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 
 import Account from "../components/account";
 import Todo from "../components/todo";
@@ -22,6 +21,9 @@ import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 import { authMiddleWare } from "../util/auth";
+
+import axios from "axios";
+import baseUrl from "../util/baseUrl";
 
 const drawerWidth = 240;
 
@@ -96,7 +98,7 @@ class home extends Component {
     const authToken = localStorage.getItem("AuthToken");
     axios.defaults.headers.common = { Authorization: `${authToken}` };
     axios
-      .get("/user")
+      .get(`${baseUrl}/user`)
       .then((response) => {
         console.log(response.data);
         this.setState({

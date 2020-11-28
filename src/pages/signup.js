@@ -12,6 +12,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 import axios from "axios";
+import baseUrl from "../util/baseUrl";
 
 const styles = (theme) => ({
   paper: {
@@ -84,7 +85,7 @@ class signup extends Component {
     // const baseURL =
     //   "https://us-central1-dodo-list-yilun.cloudfunctions.net/api";
     axios
-      .post("/signup", newUserData)
+      .post(`${baseUrl}/signup`, newUserData)
       .then((response) => {
         localStorage.setItem("AuthToken", `${response.data.token}`);
         this.setState({

@@ -5,6 +5,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Container from "@material-ui/core/Container";
 
 import axios from "axios";
+import baseUrl from "../util/baseUrl";
 
 const styles = (theme) => ({
   paper: {
@@ -58,14 +59,12 @@ class test extends Component {
       })
       .catch((error) => {});
 
-    const baseUrl =
-      "https://us-central1-dodo-list-yilun.cloudfunctions.net/api/login";
     const userData = {
       email: "osirisnero@gmail.com",
       password: "Anubis0823",
     };
     axios
-      .post(baseUrl, userData)
+      .post(`${baseUrl}/login`, userData)
       .then((response) => {
         if (response.status === 200) {
           console.log(response);
