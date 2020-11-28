@@ -57,6 +57,21 @@ class test extends Component {
         }
       })
       .catch((error) => {});
+
+    const baseUrl =
+      "https://us-central1-dodo-list-yilun.cloudfunctions.net/api/login";
+    const userData = {
+      email: "osirisnero@gmail.com",
+      password: "Anubis0823",
+    };
+    axios
+      .post(baseUrl, userData)
+      .then((response) => {
+        if (response.status === 200) {
+          console.log(response);
+        }
+      })
+      .catch((error) => {});
   };
 
   render() {
