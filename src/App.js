@@ -15,6 +15,7 @@ import {
 import login from "./pages/login";
 import signup from "./pages/signup";
 import home from "./pages/home";
+import test from "./pages/test";
 
 // import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
 // import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
@@ -42,6 +43,7 @@ function App() {
           <Route exact path="/login" component={login} />
           <Route exact path="/signup" component={signup} />
           <Route exact path="/dodo-list" component={home} />
+          <Route exact path="/test" component={test} />
         </Switch>
       </div>
     </Router>
