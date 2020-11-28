@@ -1,4 +1,4 @@
-[redirects]
+[[redirects]]
   from = "/*"
   to = "https://us-central1-dodo-list-yilun.cloudfunctions.net/api"
   status = 200
